@@ -1,0 +1,13 @@
+<main>
+    <h1>Welcome to the Our Company</h1>
+    {{#if isLoggedIn}}
+        <p>Welcome back, {{username}}!</p>
+        {{#if isAdmin}}
+            <p>You have administrative privileges.</p>
+        {{else}}
+            <p>You are a regular user.</p>
+        {{/if}}
+    {{else}}
+        <p>Please log in to access your account.</p>
+    {{/if}}
+</main>

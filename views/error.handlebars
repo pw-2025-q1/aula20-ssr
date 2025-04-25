@@ -1,0 +1,8 @@
+<h3>Ops! We found an error</h3>
+{{#if (equals code "auth_error")}}
+    <p>Authentication error: check if the user or password is correct.</p>
+{{else if (equals code "required_field_error")}}
+    <p>Form error: please fill all required fields</p>
+{{else}}
+    <p>Unknown error</p>
+{{/if}}
